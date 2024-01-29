@@ -34,7 +34,7 @@ const middle = function(array) {
   } else if (array.length % 2 === 1) {    // odd
     let middleIndex = Math.floor(array.length/2)
     return array.slice(middleIndex, middleIndex + 1);
-  } else if (array.length % 2 === 0) {    // even
+  } else {    // even
     let middleIndex = array.length/2
     return array.slice(middleIndex - 1, middleIndex + 1);
   }
