@@ -19,11 +19,11 @@ const countLetters = function(string) {
       } else {
         result[letter] = 1;
       }
-      console.log(result);
     }  
   }
 
   return result;
 };
 
-console.log(countLetters("lighthouse in the house"));
+assertEqual(countLetters("lighthouse in the house")["h"], 4);
+assertEqual(countLetters("lighthouse in the house")["n"], 1);
