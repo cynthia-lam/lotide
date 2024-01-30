@@ -25,10 +25,12 @@ const assertArraysEqual = function(array1, array2) {
 const letterPositions = function(sentence) {
   const results = {};
   for (let i = 0; i < sentence.length; i++) {
-    if (!results.hasOwnProperty(sentence[i])) {
-      results[sentence[i]] = [i];
-    } else {
-      results[sentence[i]].push(i);
+    if (sentence[i] !== ' ') {
+      if (!results.hasOwnProperty(sentence[i])) {
+        results[sentence[i]] = [i];
+      } else {
+        results[sentence[i]].push(i);
+      }
     }
   }
   return results;
