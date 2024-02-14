@@ -7,9 +7,4 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// TEST CODE
-
-assertEqual(1, 1);
-assertEqual(1, '1');
-assertEqual(1, 2);
-assertEqual('2', '2');
+  module.exports = assertEqual;

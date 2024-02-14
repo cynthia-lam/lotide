@@ -1,20 +1,4 @@
-const _ = require('lodash');
-
-// assertEqual function
-const assertEqual = function(actual, expected) {
-  if (actual !== expected) {
-    console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
-  } else {
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
-  }
-};
-
-// assertEqual tests
-
-// assertEqual(1, 1);
-// assertEqual(1, '1');
-// assertEqual(1, 2);
-// assertEqual('2', '2');
+const assertEqual = require('./assertEqual');
 
 // head function - returns the first item of an array
 const head = function(array) {
