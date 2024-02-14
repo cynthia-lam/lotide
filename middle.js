@@ -1,8 +1,3 @@
-// helper functions
-const eqArrays = require('./eqArrays');
-
-const assertArraysEqual = require('./assertArraysEqual');
-
 // The middle function should return an array with only the middle element(s) 
 // of the provided array. This means that the length of the returned elements 
 // could vary.
