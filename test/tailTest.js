@@ -18,7 +18,7 @@ describe("#tail", () => {
   });
 
   it("Should not have changed the array", () => {
-    assert.deepEqual(array1, array1);
+    assert.deepEqual(array1, array2);
   });
 
   it("should return empty array", () => {
