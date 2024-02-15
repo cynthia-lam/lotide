@@ -5,7 +5,7 @@ const tail = require('../tail');
 describe("#tail", () => {
 
   const array1 = ['Hello', 'Lighthouse', 'Labs']
-  const array2 = array1;
+  const array2 = [...array1];
   const tailTest1 = tail(array1);
   const tailTest2 = tail([]);
 
