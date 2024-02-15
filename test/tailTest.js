@@ -1,15 +1,27 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const tail = require('../tail');
 
-const array1 = ['Hello', 'Lighthouse', 'Labs']
-const array2 = array1;
-const tailTest1 = tail(array1);
-assertEqual(tailTest1.length, 2);
-assertEqual(tailTest1[0], 'Lighthouse');
-assertEqual(tailTest1[1], 'Labs');
-console.log('Checking if array is unchanged');
-assertEqual(array1, array2);
 
-console.log("Testing empty array");
-const tailTest2 = tail([]);
-assertEqual(tailTest2.length, 0);
+describe("#tail", () => {
+
+  const array1 = ['Hello', 'Lighthouse', 'Labs']
+  const array2 = array1;
+  const tailTest1 = tail(array1);
+  const tailTest2 = tail([]);
+
+  it("Should return Lighthouse", () => {
+    assert.strictEqual(tailTest1[0], 'Lighthouse');
+  });
+
+  it("Should return Labs", () => {
+    assert.strictEqual(tailTest1[1], 'Labs');
+  });
+
+  it("Should not have changed the array", () => {
+    assert.deepEqual(array1, array1);
+  });
+
+  it("should return empty array", () => {
+    assert.strictEqual(tailTest2.length, 0);
+  })
+});
