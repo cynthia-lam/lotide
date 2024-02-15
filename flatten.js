@@ -45,20 +45,3 @@ assertArraysEqual(flatten([1, 2, 3, 4, 5, 6]), [1, 2, 3, 4, 5, 6]);
 
 // has nested
 assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
-
-// many nested
-// assertArraysEqual(flatten([1, 2, [[3, [4]], 5, [6]]]), [1, 2, 3, 4, 5, 6]);
-
-// this code is wrong - keeping this here for when i learn about recursion
-// const flatten = function(array) {
-//   let output = [];
-  
-//   for (let item of array) {
-//     if (Array.isArray(item)) {
-//       output.push(flatten(item));
-//     } else {
-//       output.push(item);
-//     }
-//   }
-//   return output;
-// };
