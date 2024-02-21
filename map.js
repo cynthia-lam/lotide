@@ -26,3 +26,5 @@ assertArraysEqual(map(test2, num => Math.floor(num)), [2, 1, 3, 3, 4]);
 
 const test3 = [[1], [2,1,1], [], "ss"];
 assertArraysEqual(map(test3, num => num[0]), [1, 2, , "s"]);
+
+module.exports = map;

@@ -40,3 +40,5 @@ const testNoMatch = {
   "Akelarre":  { stars: 3 }
 };
 assertEqual(findKey(testNoMatch, x => x.stars === 4), undefined);
+
+module.exports = findKey;

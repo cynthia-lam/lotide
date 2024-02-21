@@ -23,3 +23,5 @@ assertArraysEqual(letterPositions("hello")["l"], [2, 3]);
 assertArraysEqual(letterPositions("hello")["o"], [4]);
 assertArraysEqual(letterPositions("eabcde")["e"], [0, 5]);
 assertArraysEqual(letterPositions("eeeeee")["e"], [0, 1, 2, 3, 4, 5]);
+
+module.exports = letterPositions;
